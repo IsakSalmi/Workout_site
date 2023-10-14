@@ -23,4 +23,3 @@ def add_user(username, password, renterpassword):
         return ReturnType.SUCCESS
     else:
         return ReturnType.FAIL
-
