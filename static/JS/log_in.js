@@ -1,7 +1,12 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
+const createAccount = document.getElementById("createaccount");
 
+createAccount.onclick = function () {
+    let baseUrl = window.location.origin;
+    location.href = baseUrl + '/create_account'
+}
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='/CSS/create_account.css')}}>
+    <script defer src={{ url_for('static', filename='/JS/create_account.js')}}></script>
+</head>
+
+<body>
+    <main id="main-holder">
+    <h1 id="create-header">Create Your Account</h1>
+        <form id="createacc-form">
+            <input type="text" name="username" id="username-field" class="createacc-form-field" placeholder="Enter Username">
+            <input type="password" name="password" id="password-field" class="createacc-field" placeholder="Enter Password">
+            <input type="password" name="checkpassword" id="check-password-field" class="createacc-form-field" placeholder="Re-enter Password">
+            <input type="submit" value="Create Account" id="createacc-form-submit">
+        </form>
+
+    </main>
+</body>
+</html>

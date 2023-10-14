@@ -68,7 +68,11 @@ html {
     padding: 0px 0px 5px 5px;
   }
 
-  #login-form-submit {
+  .createaccount {
+    margin-bottom: 10%;
+  }
+
+  #login-form-submit, .createaccount button{
     width: 100%;
     padding: 7px;
     border: none;
@@ -79,3 +83,4 @@ html {
     cursor: pointer;
     outline: none;
   }
+
