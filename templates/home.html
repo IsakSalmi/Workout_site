@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href={{ url_for('static', filename='/CSS/home.css')}}>
+  <script defer src={{ url_for('static', filename='/JS/home.js')}}></script>
+</head>
+
+<body>
+
+<div id="profile_summary">
+  <div id="calendar" class="summary_block">
+    <u>Kalender</u>
+    <div class="calendar_week_days">Måndag:</div>
+    <div class="calendar_week_days">Tisdag:</div>
+    <div class="calendar_week_days">Onsdag:</div>
+    <div class="calendar_week_days">Torsdag:</div>
+    <div class="calendar_week_days">Fredag:</div>
+    <div class="calendar_week_days">Lördag:</div>
+    <div class="calendar_week_days">Söndag:</div>
+  </div>
+  <div id="latest_activities" class="summary_block">
+    <u>Senaste aktiviteter</u>
+    <br><br>
+    <div class="activity_month">Oct</div>
+    <div class="activities">11 - 4km - 5:43 min/km</div>
+    <div class="activities">12 - 10km - 6:05 min/km</div>
+    <div class="activities">14 - 3km - 6:12 min/km</div>
+  </div>
+  <div id="message_of_the_day" class="summary_block">
+    <u>Message of the day</u>
+    <br><br>
+    Who's gonna carry the boats?
+    <br><br>
+    Stay hard!
+  </div>
+  <div class="summary_block">4</div>
+  <div class="summary_block">5</div>
+</div>
+
+</body>
+</html>
