@@ -5,7 +5,7 @@ app = Flask(__name__, template_folder="Templates")
 
 @app.route('/', methods=['GET'])
 def index_get():
-    return None
+    return render_template("test.html")
 
 
 if __name__ == '__main__':
