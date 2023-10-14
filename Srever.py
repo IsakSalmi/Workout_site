@@ -5,7 +5,7 @@ app = Flask(__name__, template_folder="Templates")
 
 @app.route('/', methods=['GET'])
 def index_get():
-    return render_template("test.html")
+    return render_template("log_in.html")
 
 
 @app.route('/', methods=['POST'])
