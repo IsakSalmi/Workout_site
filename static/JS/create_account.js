@@ -12,20 +12,18 @@ createAccount.addEventListener("click", (e) => {
     }
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST","/",true);
+    xhr.open("POST","/create_account",true);
     xhr.setRequestHeader("Content-Type","application/json");
 
     xhr.onreadystatechange = function() {
-        if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+        if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
             let baseUrl = window.location.origin
-            window.location.replace(baseUrl + '/log_in');
+            window.location.replace(baseUrl + '/');
         }
-        else if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 400){
-            loginErrorMsg.style.opacity = 1;
-        }
+        else if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 400){ }
     };
 
-    xhr.send(JSON.stringify(username+"/"+password));
+    xhr.send(JSON.stringify(username+" "+password+" "+repassword));
     console.log(xhr);
 
 })

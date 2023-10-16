@@ -19,6 +19,16 @@ def indexPost():
         return Response("invalid", 400)
 
 
+@app.route("/create_account", methods=["POST"])
+def createAccountPost():
+    answer = str(request.json).split()
+    DB.add_user(answer[0], answer[1], answer[2])
+    if request == "POST":
+        return Response("OK", 200)
+    else:
+        return Response("invalid", 400)
+
+
 @app.route('/create_account', methods=['GET'])
 def createAcc():
     return render_template("create_account.html")

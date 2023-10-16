@@ -1,5 +1,4 @@
 import sqlite3
-from flask import g
 from enum import Enum
 
 
@@ -8,8 +7,8 @@ class ReturnType(Enum):
     FAIL = False
 
 
-DATABASE = "DB.sqlite"
-db = sqlite3.connect(DATABASE)
+DATABASE = "../DB.sqlite"
+db = sqlite3.connect(DATABASE, check_same_thread=False)
 curser = db.cursor()
 
 
@@ -30,3 +29,9 @@ def check_user(username, password):
         return ReturnType.SUCCESS
     else:
         return ReturnType.FAIL
+
+
+
+
+
+
